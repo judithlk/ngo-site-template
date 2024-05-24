@@ -8,7 +8,7 @@ export default function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="sm:h-[10%] md:h-[12%] w-[100%] bg-white shadow-md flex justify-between items-center fixed z-50">
+    <div className="sm:h-[10%] md:h-[12%] w-[100%] bg-white shadow-md flex justify-between items-center fixed top-0 z-50">
       <div className="justify-center pl-[3%] flex items-center">
         <Image
           src={"/logo.png"}
