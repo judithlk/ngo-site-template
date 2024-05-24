@@ -23,9 +23,9 @@ export default function Footer() {
             <div className="hidden md:block h-[120px] border border-white"></div>
             <div className="flex-col space-y-1">
             <h1 className="text-base font-semibold text-white mb-2">CONTACT US</h1>
-            <Link href="mailto:email@ngosite.com"><FooterLink children="email@ngosite.com" /></Link>
-            <FooterLink children="+11 123 456 7890" />
-            <FooterLink children="Office Address, Street, City, State, PO Box" />
+            <Link href="mailto:email@ngosite.com"><FooterLink>{"email@ngosite.com"}</FooterLink></Link>
+            <FooterLink>{"+11 123 456 7890"}</FooterLink>
+            <FooterLink>{"Office Address, Street, City, State, PO Box"}</FooterLink>
             </div>
         </div>
     )
