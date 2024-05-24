@@ -4,9 +4,9 @@ import NavPill from "./NavPill";
 
 export default function NavBar() {
   return (
-    <div className="h-[12%] w-[100%] bg-white shadow-md flex justify-between fixed z-50">
+    <div className="sm:h-[10%] md:h-[12%] w-[100%] bg-white shadow-md flex justify-between items-center fixed z-50">
       <div className="justify-center pl-[3%] flex items-center">
-        <Image src={"/logo.png"} alt="logo" height={100} width={120} />
+        <Image src={"/logo.png"} alt="logo" layout="relative" height={100} width={120} />
         <h1 className="hidden sm:block md:hidden lg:block ml-5 font-semibold lg:text-2xl xl:text-xl">
           Full Organization Name
         </h1>
