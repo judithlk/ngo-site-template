@@ -31,12 +31,12 @@ export default function HomePage() {
             <Link href="#">
               <div className="space-y-4">
                 <h1 className="text-2xl sm:text-5xl font-bold md:text-gray-300 hover:text-midblue">
-                  Read GRAHAM'S Story
+                  Read GRAHAM&apos;S Story
                 </h1>
 
                 <p className="text-base sm:text-xl italic font-semibold md:text-gray-100 hover:text-midblue">
                   How project name helped him and his family overcome
-                  Alzheimer's
+                  Alzheimer&apos;s
                 </p>
               </div>
             </Link>
