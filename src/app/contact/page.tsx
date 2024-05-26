@@ -123,7 +123,7 @@ export default function ContactPage() {
             <Image src={"/contact2.jpg"} alt="" layout="responsive" width={100} height={100} />
           </div> */}
         </div>
-        <div className="w-[80%] m-auto space-y-6 text-2xl font-semibold italic mt-4">   
+        <div className="w-[80%] m-auto space-y-6 text-xl md:text-2xl font-semibold italic mt-4">   
             <h1>Email us: <Link href="mailto:email@ngosite.com">email@ngosite.com</Link></h1>
             <h1>Call us: +11 123 456 7890</h1>
         </div>
