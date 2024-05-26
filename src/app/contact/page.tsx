@@ -77,7 +77,7 @@ export default function ContactPage() {
                       <FormControl>
                         <Input {...field} />
                       </FormControl>
-                      <FormMessage/>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -90,7 +90,7 @@ export default function ContactPage() {
                       <FormControl>
                         <Input {...field} />
                       </FormControl>
-                      <FormMessage/>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -116,16 +116,21 @@ export default function ContactPage() {
             </Form>
           </div>
           <div className="m-auto w-[30%] sm:w-[20%] flex flex-col items-center justify-center">
-            <h1 className="text-xl md:text-2xl italic">Social Media</h1>
-          <SocialBar />
+            <h1 className="text-xl md:text-2xl italic w-[100%]">
+              Social Media
+            </h1>
+            <SocialBar />
           </div>
           {/* <div className="relative mt-[8%] w-[50%] m-auto md:w-[30%] flex items-center">
             <Image src={"/contact2.jpg"} alt="" layout="responsive" width={100} height={100} />
           </div> */}
         </div>
-        <div className="w-[80%] m-auto space-y-6 text-xl md:text-2xl font-semibold italic mt-4">   
-            <h1>Email us: <Link href="mailto:email@ngosite.com">email@ngosite.com</Link></h1>
-            <h1>Call us: +11 123 456 7890</h1>
+        <div className="w-[80%] m-auto space-y-6 text-xl md:text-2xl font-semibold italic mt-4">
+          <h1>
+            Email us:{" "}
+            <Link href="mailto:email@ngosite.com">email@ngosite.com</Link>
+          </h1>
+          <h1>Call us: +11 123 456 7890</h1>
         </div>
       </main>
       <Footer />
