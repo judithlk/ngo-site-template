@@ -115,8 +115,8 @@ export default function ContactPage() {
               </form>
             </Form>
           </div>
-          <div className="m-auto w-[30%] sm:w-[20%] flex flex-col items-center justify-center">
-            <h1 className="text-xl md:text-2xl italic w-[100%]">
+          <div className="m-auto w-[100%] sm:w-[20%] flex flex-col items-center justify-center">
+            <h1 className="text-xl md:text-2xl italic">
               Social Media
             </h1>
             <SocialBar />
