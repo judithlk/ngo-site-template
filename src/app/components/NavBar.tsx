@@ -15,7 +15,7 @@ export default function NavBar() {
           alt="logo"
           layout="relative"
           height={100}
-          width={120}
+          width={100}
         />
         <h1 className="hidden sm:block md:hidden lg:block ml-5 font-semibold lg:text-2xl xl:text-xl">
           Full Organization Name

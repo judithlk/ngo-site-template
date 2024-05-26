@@ -4,7 +4,7 @@ import FooterLink from "./FooterLink";
 
 export default function Footer() {
     return(
-        <div className="flex flex-col md:flex-row items-start md:items-center p-10 bg-midblue justify-center space-x-8 mt-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center p-10 bg-midblue justify-center space-x-8">
             <div className="flex flex-col md:flex-row items-start md:items-center space-x-3 pb-8 mb-8 md:pb-0 md:mb-0 border-b-2 border-white md:border-0">
                 <div className="bg-white p-2 pr-0 m-3">
                     <Image 
