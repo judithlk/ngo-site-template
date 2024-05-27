@@ -114,7 +114,7 @@ export default function ContactPage() {
                 <Button type="submit">Submit</Button>
               </form>
             </Form>
-            <h1 className="text-midblue italic text-sm"><Link href="#">Privacy policy</Link></h1>
+            <h1 className="text-midblue italic text-sm hover:text-darkblue"><Link href="#">Privacy policy</Link></h1>
           </div>
           <div className="m-auto w-[100%] sm:w-[20%] flex flex-col items-center justify-center">
             <h1 className="text-xl md:text-2xl italic">
