@@ -34,7 +34,7 @@ const formSchema = z.object({
     .number({
       message: "Please enter your age",
     })
-    .min(18, {
+    .gte(18, {
       message: "You must be at least 18 to volunteer with us",
     }),
   email: z.string().email({
