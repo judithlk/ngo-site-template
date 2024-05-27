@@ -69,7 +69,7 @@ export default function VolunteerModal({
     <div className="w-[80%] h-[80%] m-auto md:w-[60%]">
       <ScrollArea className="h-[100%] w-[100%] bg-white rounded-sm border p-4">
         <h1 className="text-xl font-bold mb-4">
-          Fill in the form below and we'll be in touch with you soon!
+          Fill in the form below and we&apos;ll be in touch with you soon!
         </h1>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
