@@ -83,6 +83,7 @@ export default function TakeAction() {
                 />
               </div>
               <div className="sm:w-[60%] flex flex-col justify-center items-end">
+                <h2 className="text-midblue text-xl font-semibold">Project Name</h2>
                 <p className="italic text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate aut beatae temporibus quia fugiat culpa
@@ -94,13 +95,6 @@ export default function TakeAction() {
                   distinctio possimus, dolorum corporis, dicta consectetur
                   nesciunt omnis maiores.
                 </p>
-                <h2 className="text-midblue">
-                  -
-                  <Link href="#" className="hover:text-darkblue">
-                    Volunteer name
-                  </Link>
-                  , 23
-                </h2>
               </div>
             </div>
             <div className="w-[100%] text-end">
