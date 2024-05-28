@@ -3,6 +3,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import SocialBar from "../components/SocialBar";
+import Aside from "../components/Aside";
 import Image from "next/image";
 import Link from "next/link";
 import VolunteerModal from "../components/VolunteerModal";
@@ -20,88 +21,98 @@ export default function TakeAction() {
     <>
       <NavBar />
       <main className="w-[100%] pb-10 mb-0 relative">
-        <div className="w-[100%] h-[100%] pt-[8%] lg:pt-0 space-y-10">
+        <div className="w-[100%] h-[100%] pt-[8%] lg:pt-0 space-y-24">
           <div className="h-64 md:h-80 bg-darkblue flex items-center justify-center pt-4">
             <h1 className="text-3xl md:text-5xl text-white font-bold italic">
               What can you do?
             </h1>
           </div>
-          <div className="w-[100%] py-4 px-10 space-y-8">
-            <h1 className="text-4xl md:text-5xl font-semibold text-midblue">
-              VOLUNTEER
-            </h1>
-            <div className="flex flex-col sm:flex-row justify-around lg:justify-normal">
-              <div className="sm:w-[70%] flex flex-col justify-center">
-                <p className="italic">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate aut beatae temporibus quia fugiat culpa
-                  necessitatibus doloribus rerum corrupti labore fugit nesciunt
-                  ut, aliquid repellat ipsum perspiciatis illum quaerat
-                  distinctio. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Debitis dolores nostrum eos architecto? Fuga
-                  voluptate libero fugit minima perferendis ducimus tempora
-                  distinctio possimus, dolorum corporis, dicta consectetur
-                  nesciunt omnis maiores.
-                </p>
-                <h2 className="text-midblue">
-                  -
-                  <Link href="#" className="hover:text-darkblue">
-                    Volunteer name
-                  </Link>
-                  , 23
-                </h2>
+          <div className="w-[100%] flex flex-col md:flex-row justify-around">
+            <div className="md:w-[65%] space-y-10">
+              <div className="w-[90%] py-4 px-10 space-y-8">
+                <h1 className="text-4xl md:text-5xl font-semibold text-midblue">
+                  VOLUNTEER
+                </h1>
+                <div className="flex flex-col sm:flex-row justify-around lg:justify-normal">
+                  <div className="sm:w-[70%] flex flex-col justify-center">
+                    <p className="italic">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptate aut beatae temporibus quia fugiat culpa
+                      necessitatibus doloribus rerum corrupti labore fugit
+                      nesciunt ut, aliquid repellat ipsum perspiciatis illum
+                      quaerat distinctio. Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Debitis dolores nostrum eos
+                      architecto? Fuga voluptate libero fugit minima perferendis
+                      ducimus tempora distinctio possimus, dolorum corporis,
+                      dicta consectetur nesciunt omnis maiores.
+                    </p>
+                    <h2 className="text-midblue">
+                      -
+                      <Link href="#" className="hover:text-darkblue">
+                        Volunteer name
+                      </Link>
+                      , 23
+                    </h2>
+                  </div>
+                  <div className="relative m-auto w-[62%] mt-5 sm:mt-0 sm:w-[25%] lg:w-[18%] md:ml-10 rounded-full">
+                    <Image
+                      src={"/profile photo.jpg"}
+                      alt=""
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      style={{ borderRadius: "50%" }}
+                    />
+                  </div>
+                </div>
+                <Button onClick={() => setModalState(true)} className="">
+                  Volunteer Now
+                </Button>
               </div>
-              <div className="relative m-auto w-[62%] mt-5 sm:mt-0 sm:w-[25%] lg:w-[18%] md:ml-10 rounded-full">
-                <Image
-                  src={"/profile photo.jpg"}
-                  alt=""
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  style={{ borderRadius: "50%" }}
-                />
+              <div className="w-[80%] m-auto border-t border-midblue"></div>
+              <div className="w-[90%] py-4 px-10 space-y-8">
+                <h1 className="text-4xl md:text-5xl mr-3 font-semibold text-midblue text-right">
+                  GIVE
+                </h1>
+                <div className="flex flex-col sm:flex-row justify-between lg:justify-between">
+                  <div className="relative w-[80%] my-7 m-auto sm:mt-0 sm:w-[28%] lg:w-[20%] md:ml-10 rounded-full">
+                    <Image
+                      src={"/stock2.jpg"}
+                      alt=""
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      style={{ borderRadius: "30px" }}
+                    />
+                  </div>
+                  <div className="sm:w-[60%] flex flex-col justify-center items-end">
+                    <h2 className="text-midblue text-xl font-semibold">
+                      Project Name
+                    </h2>
+                    <p className="italic text-justify">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptate aut beatae temporibus quia fugiat culpa
+                      necessitatibus doloribus rerum corrupti labore fugit
+                      nesciunt ut, aliquid repellat ipsum perspiciatis illum
+                      quaerat distinctio. Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Debitis dolores nostrum eos
+                      architecto? Fuga voluptate libero fugit minima perferendis
+                      ducimus tempora distinctio possimus, dolorum corporis,
+                      dicta consectetur nesciunt omnis maiores.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-[100%] text-end">
+                  <Button
+                    onClick={() => setModalState(true)}
+                    className="bg-red-600 text-right"
+                  >
+                    Give Now
+                  </Button>
+                </div>
               </div>
             </div>
-            <Button onClick={() => setModalState(true)} className="">
-              Volunteer Now
-            </Button>
-          </div>
-          <div className="w-[80%] m-auto border-t border-midblue"></div>
-          <div className="w-[100%] py-4 px-10 space-y-8">
-            <h1 className="text-4xl md:text-5xl mr-3 font-semibold text-midblue text-right">
-              GIVE
-            </h1>
-            <div className="flex flex-col sm:flex-row justify-between lg:justify-between">
-              <div className="relative w-[80%] my-7 m-auto sm:mt-0 sm:w-[28%] lg:w-[20%] md:ml-10 rounded-full">
-                <Image
-                  src={"/stock2.jpg"}
-                  alt=""
-                  layout="responsive"
-                  width={100}
-                  height={100}
-                  style={{ borderRadius: "30px" }}
-                />
-              </div>
-              <div className="sm:w-[60%] flex flex-col justify-center items-end">
-                <h2 className="text-midblue text-xl font-semibold">Project Name</h2>
-                <p className="italic text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate aut beatae temporibus quia fugiat culpa
-                  necessitatibus doloribus rerum corrupti labore fugit nesciunt
-                  ut, aliquid repellat ipsum perspiciatis illum quaerat
-                  distinctio. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Debitis dolores nostrum eos architecto? Fuga
-                  voluptate libero fugit minima perferendis ducimus tempora
-                  distinctio possimus, dolorum corporis, dicta consectetur
-                  nesciunt omnis maiores.
-                </p>
-              </div>
-            </div>
-            <div className="w-[100%] text-end">
-            <Button onClick={() => setModalState(true)} className="bg-red-600 text-right">
-              Give Now
-            </Button>
-            </div>
+            <Aside />
           </div>
         </div>
         <div
