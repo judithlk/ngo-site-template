@@ -20,7 +20,7 @@ export default function ImpactPage() {
           <div className="w-[100%] flex flex-col md:flex-row justify-evenly">
             <div className="md:w-[65%] space-y-10">
               {projects.map((project, index) => (
-                <ProjectModule title={project} />
+                <ProjectModule key={project} title={project} />
               ))}
             </div>
             <Aside />
