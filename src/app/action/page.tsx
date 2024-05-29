@@ -28,8 +28,8 @@ export default function TakeAction() {
             </h1>
           </div>
           <div className="w-[100%] flex flex-col md:flex-row justify-around">
-            <div className="md:w-[65%] space-y-10">
-              <div className="w-[90%] py-4 px-10 space-y-8">
+            <div className="m-auto w-[90%] md:mx-0 md:w-[65%] space-y-10">
+              <div className="w-[100%] py-4 px-10 space-y-8">
                 <h1 className="text-4xl md:text-5xl font-semibold text-midblue">
                   VOLUNTEER
                 </h1>
@@ -70,7 +70,7 @@ export default function TakeAction() {
                 </Button>
               </div>
               <div className="w-[80%] m-auto border-t border-midblue"></div>
-              <div className="w-[90%] py-4 px-10 space-y-8">
+              <div className="w-[100%] py-4 px-10 space-y-8">
                 <h1 className="text-4xl md:text-5xl mr-3 font-semibold text-midblue text-right">
                   GIVE
                 </h1>

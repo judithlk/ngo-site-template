@@ -71,7 +71,7 @@ export default function Aside() {
         </Form>
       </div>
       <div className="w-[100%] py-3 space-y-3">
-        <h1 className="text-black font-semibold text-3xl">UPDATES</h1>
+        <h1 className="text-black font-semibold text-2xl">UPDATES</h1>
         <div>
         <Link href="#"><h1 className="text-darkblue text-base uppercase">Project save the earth kicks off</h1></Link>
         </div>
@@ -86,6 +86,20 @@ export default function Aside() {
         <hr />
         <div>
         <Link href="#"><h1 className="text-darkblue text-base uppercase">Project save the earth</h1></Link>
+        </div>
+      </div>
+      <div className="w-[100%] py-3 space-y-3">
+        <h1 className="text-black font-semibold text-2xl">UPCOMING EVENTS</h1>
+        <div>
+        <Link href="#"><h1 className="text-darkblue text-base uppercase">Children's day program - sign up now!</h1></Link>
+        </div>
+        <hr />
+        <div>
+        <Link href="#"><h1 className="text-darkblue text-base uppercase">General townhall with donors and sponsors</h1></Link>
+        </div>
+        <hr />
+        <div>
+        <Link href="#"><h1 className="text-darkblue text-base uppercase">Christmas Eve gala</h1></Link>
         </div>
       </div>
     </div>
