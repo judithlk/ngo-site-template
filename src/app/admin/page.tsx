@@ -44,45 +44,47 @@ export default function AdminLogin() {
   return (
     <>
       <Wrapper>
-        <div className="w-[84%] sm:w-[70%] md:w-[50%] lg:w-[40%] h-fit m-auto shadow-xl p-5 sm:p-10 lg:p-16 bg-midblue space-y-8">
-            <h1 className="font-semibold text-base text-white">Login below to proceed to admin dashboard</h1>
-          <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-4 text-white"
-            >
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email address</FormLabel>
-                    <FormControl>
-                      <Input type="email" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+        <h1 className="font-semibold text-base text-white">
+          Login below to proceed to admin dashboard
+        </h1>
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-4 text-white"
+          >
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email address</FormLabel>
+                  <FormControl>
+                    <Input type="email" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
-              <FormField
-                control={form.control}
-                name="password"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Password</FormLabel>
-                    <FormControl>
-                      <Input type="password" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Link href="#" className="block"><h5 className="text-sm font-semibold italic">Forgot password</h5></Link>
-              <Button type="submit">Login</Button>
-            </form>
-          </Form>
-        </div>
+            <FormField
+              control={form.control}
+              name="password"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Password</FormLabel>
+                  <FormControl>
+                    <Input type="password" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Link href="#" className="block">
+              <h5 className="text-sm font-semibold italic">Forgot password</h5>
+            </Link>
+            <Button type="submit">Login</Button>
+          </form>
+        </Form>
       </Wrapper>
     </>
   );
