@@ -1,5 +1,5 @@
 import * as React from "react";
-import NavBar from "@/app/components/NavBar";
+import NavBar from "@/app/components/Main/NavBar";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,10 +9,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import MainButton from "./components/MainButton";
-import Footer from "./components/Footer";
+import MainButton from "./components/Main/MainButton";
+import Footer from "./components/Main/Footer";
 import Link from "next/link";
-import SocialBar from "./components/SocialBar";
+import SocialBar from "./components/Main/SocialBar";
 
 export default function HomePage() {
   return (

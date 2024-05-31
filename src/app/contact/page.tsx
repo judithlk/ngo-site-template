@@ -1,8 +1,8 @@
 "use client";
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import SocialBar from "../components/SocialBar";
+import NavBar from "../components/Main/NavBar";
+import Footer from "../components/Main/Footer";
+import SocialBar from "../components/Main/SocialBar";
 import Image from "next/image";
 import Link from "next/link";
 

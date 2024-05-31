@@ -1,12 +1,12 @@
 "use client";
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import SocialBar from "../components/SocialBar";
-import Aside from "../components/Aside";
+import NavBar from "../components/Main/NavBar";
+import Footer from "../components/Main/Footer";
+import SocialBar from "../components/Main/SocialBar";
+import Aside from "../components/Main/Aside";
 import Image from "next/image";
 import Link from "next/link";
-import VolunteerModal from "../components/VolunteerModal";
+import VolunteerModal from "../components/Main/VolunteerModal";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";

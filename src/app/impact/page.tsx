@@ -1,7 +1,7 @@
-import NavBar from "../components/NavBar"
-import Footer from "../components/Footer"
-import Aside from "../components/Aside"
-import ProjectModule from "../components/ProjectModule"
+import NavBar from "../components/Main/NavBar"
+import Footer from "../components/Main/Footer"
+import Aside from "../components/Main/Aside"
+import ProjectModule from "../components/Main/ProjectModule"
 import Image from "next/image"
 
 export default function ImpactPage() {

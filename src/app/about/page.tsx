@@ -1,6 +1,6 @@
-import NavBar from "@/app/components/NavBar";
-import Footer from "../components/Footer";
-import Aside from "../components/Aside";
+import NavBar from "@/app/components/Main/NavBar";
+import Footer from "../components/Main/Footer";
+import Aside from "../components/Main/Aside";
 import Image from "next/image";
 
 export default function AboutUs() {
