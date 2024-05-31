@@ -91,7 +91,7 @@ export default function Aside() {
       <div className="w-[100%] py-3 space-y-3">
         <h1 className="text-black font-semibold text-2xl">UPCOMING EVENTS</h1>
         <div>
-        <Link href="#"><h1 className="text-darkblue text-base uppercase">Children's day program - sign up now!</h1></Link>
+        <Link href="#"><h1 className="text-darkblue text-base uppercase">Children&apos;s day program - sign up now!</h1></Link>
         </div>
         <hr />
         <div>
