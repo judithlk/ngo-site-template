@@ -44,7 +44,7 @@ export default function AdminLogin() {
   return (
     <>
       <Wrapper>
-        <div className="w-[84%] sm:w-[70%] md:w-[50%] lg:w-[40%] h-fit m-auto shadow-xl p-2 sm:p-10 lg:p-16 bg-midblue space-y-8">
+        <div className="w-[84%] sm:w-[70%] md:w-[50%] lg:w-[40%] h-fit m-auto shadow-xl p-5 sm:p-10 lg:p-16 bg-midblue space-y-8">
             <h1 className="font-semibold text-base text-white">Login below to proceed to admin dashboard</h1>
           <Form {...form}>
             <form
